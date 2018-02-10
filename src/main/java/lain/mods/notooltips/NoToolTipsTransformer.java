@@ -26,10 +26,10 @@ public class NoToolTipsTransformer implements IClassTransformer
     private byte[] transform001(byte[] bytes)
     {
         Set<String> methodNames = Sets.newHashSet("func_82840_a", "getTooltip", "a");
-        Set<String> methodDescs = Sets.newHashSet("(Lnet/minecraft/entity/player/EntityPlayer;Z)Ljava/util/List;", "(Lnet/minecraft/src/EntityPlayer;Z)Ljava/util/List;", "(Lue;Z)Ljava/util/List;");
+        Set<String> methodDescs = Sets.newHashSet("(Lnet/minecraft/entity/player/EntityPlayer;Z)Ljava/util/List;", "(Lnet/minecraft/src/EntityPlayer;Z)Ljava/util/List;", "(Lyz;Z)Ljava/util/List;");
 
-        Set<String> targetInsnOwners = Sets.newHashSet("net/minecraft/item/ItemStack", "net/minecraft/src/ItemStack", "yd");
-        Set<String> targetInsnNames = Sets.newHashSet("func_111283_C", "D");
+        Set<String> targetInsnOwners = Sets.newHashSet("net/minecraft/item/ItemStack", "net/minecraft/src/ItemStack", "add");
+        Set<String> targetInsnNames = Sets.newHashSet("func_111283_C", "D", "getAttributeModifiers");
         Set<String> targetInsnDescs = Sets.newHashSet("()Lcom/google/common/collect/Multimap;");
 
         ClassNode classNode = new ClassNode();

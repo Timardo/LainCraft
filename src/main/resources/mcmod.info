@@ -1,0 +1,16 @@
+[
+{
+  "modid": "NoToolTips",
+  "name": "NoToolTips",
+  "description": "NoToolTips makes that annoying tooltip (in tools & swords) introduced in MC 1.6 toggleable",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "https://github.com/zlainsama/laincraft",
+  "updateUrl": "https://github.com/zlainsama/LainCraft/releases",
+  "authorList": ["Lain"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

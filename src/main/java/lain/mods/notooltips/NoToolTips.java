@@ -2,20 +2,27 @@ package lain.mods.notooltips;
 
 import java.util.Map;
 import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
+import cpw.mods.fml.relauncher.IFMLLoadingPlugin.DependsOn;
+import cpw.mods.fml.relauncher.IFMLLoadingPlugin.MCVersion;
 
-@IFMLLoadingPlugin.Name("NoToolTips")
-@IFMLLoadingPlugin.MCVersion("")
-@IFMLLoadingPlugin.TransformerExclusions("lain.mods.notooltips.")
+@MCVersion( NoToolTips.MC_VERSION )
+@DependsOn( "forge" )
 public class NoToolTips implements IFMLLoadingPlugin
 {
-
+    public static final String MC_VERSION = "1.7.10";
+    public static final String MOD_ID = "NoToolTips";
+    public static final String MOD_VERSION = "1.0";
+    
     @Override
     public String[] getASMTransformerClass()
     {
-        return new String[] { "lain.mods.notooltips.NoToolTipsTransformer" };
+        return new String[] {NoToolTipsTransformer.class.getName()};
     }
 
     @Override
+	public String getAccessTransformerClass() {
+		return null;
+	}
     public String[] getLibraryRequestClass()
     {
         return null;
@@ -24,7 +31,7 @@ public class NoToolTips implements IFMLLoadingPlugin
     @Override
     public String getModContainerClass()
     {
-        return "lain.mods.notooltips.NoToolTipsDummyContainer";
+        return NoToolTipsDummyContainer.class.getName();
     }
 
     @Override
@@ -35,7 +42,6 @@ public class NoToolTips implements IFMLLoadingPlugin
 
     @Override
     public void injectData(Map<String, Object> data)
-    {
-    }
+    {}
 
 }

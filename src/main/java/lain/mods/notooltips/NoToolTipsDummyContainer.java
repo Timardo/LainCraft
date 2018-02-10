@@ -1,4 +1,4 @@
-package lain.mods.inputfix;
+package lain.mods.notooltips;
 
 import java.util.Arrays;
 import com.google.common.eventbus.EventBus;
@@ -6,19 +6,19 @@ import cpw.mods.fml.common.DummyModContainer;
 import cpw.mods.fml.common.LoadController;
 import cpw.mods.fml.common.ModMetadata;
 
-public class InputFixDummyContainer extends DummyModContainer
+public class NoToolTipsDummyContainer extends DummyModContainer
 {
 
-    public InputFixDummyContainer()
+    public NoToolTipsDummyContainer()
     {
         super(new ModMetadata());
         ModMetadata meta = getMetadata();
-        meta.modId = "InputFix";
-        meta.name = "InputFix";
-        meta.version = "1.6.x-v3";
+        meta.modId = "NoToolTips";
+        meta.name = "NoToolTips";
+        meta.version = "1.7.10";
         meta.authorList = Arrays.asList("Lain");
-        meta.description = "InputFix is a way to enable multi-byte input method in Minecraft.";
-        meta.credits = "Dear_ICE, pa001024, sunny00123, crafteverywhere";
+        meta.description = "NoToolTips makes that annoying tooltip (in tools & swords) introduced in MC 1.6 toggleable";
+        meta.credits = "";
         meta.url = "https://github.com/zlainsama/laincraft";
         meta.updateUrl = "https://github.com/zlainsama/LainCraft/releases";
     }
