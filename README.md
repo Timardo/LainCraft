@@ -13,3 +13,6 @@ Works with every mod (I believe)
 With turned F3+H on
 
 ![LainCraft](NoToolTips2.png)
+
+
+*Using Comic Sans font with [Unicode Font Extension](https://minecraft.curseforge.com/projects/unicode-font-extension) mod.
