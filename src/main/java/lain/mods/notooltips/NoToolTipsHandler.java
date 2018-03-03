@@ -2,7 +2,7 @@ package lain.mods.notooltips;
 
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import com.google.common.collect.Multimap;
-import cpw.mods.fml.client.FMLClientHandler;
+import net.minecraftforge.fml.client.FMLClientHandler;
 
 public class NoToolTipsHandler
 {

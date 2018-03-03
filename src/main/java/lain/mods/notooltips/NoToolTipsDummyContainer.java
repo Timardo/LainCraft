@@ -2,9 +2,9 @@ package lain.mods.notooltips;
 
 import java.util.Arrays;
 import com.google.common.eventbus.EventBus;
-import cpw.mods.fml.common.DummyModContainer;
-import cpw.mods.fml.common.LoadController;
-import cpw.mods.fml.common.ModMetadata;
+import net.minecraftforge.fml.common.DummyModContainer;
+import net.minecraftforge.fml.common.LoadController;
+import net.minecraftforge.fml.common.ModMetadata;
 
 public class NoToolTipsDummyContainer extends DummyModContainer
 {
@@ -15,12 +15,12 @@ public class NoToolTipsDummyContainer extends DummyModContainer
         ModMetadata meta = getMetadata();
         meta.modId = "NoToolTips";
         meta.name = "NoToolTips";
-        meta.version = "1.7.10";
-        meta.authorList = Arrays.asList("Lain");
+        meta.version = "1.8.9";
+        meta.authorList = Arrays.asList("Timardo");
         meta.description = "NoToolTips makes that annoying tooltip (in tools & swords) introduced in MC 1.6 toggleable";
-        meta.credits = "";
-        meta.url = "https://github.com/zlainsama/laincraft";
-        meta.updateUrl = "https://github.com/zlainsama/LainCraft/releases";
+        meta.credits = "Huge thanks to Lain for base mod for MC 1.6";
+        meta.url = "https://github.com/Timardo/LainCraft";
+        meta.updateUrl = "https://github.com/Timardo/LainCraft/releases";
     }
 
     @Override
